@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+
+    
+     <View 
+            android:layout_width="fill_parent"
+	        android:layout_height="1dip"
+	        android:background="#66000000"       
+            />
+    
+
+    
+      <View 
+            android:layout_width="fill_parent"
+	        android:layout_height="1dip"
+	        android:background="#66000000"       
+            />
+
+
+	<View
+            android:layout_width="fill_parent"
+	        android:layout_height="1dip"
+	        android:background="#66000000"
+            />
+
+
+
+	<TextView
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:gravity="center"
+		android:padding="16dp"
+		android:text="HU-Number"
+		android:textColor="#000"
+		android:textSize="18sp"
+		android:textStyle="bold"
+		/>
+
+	<EditText
+		android:id="@+id/scannedBarcodeTextView"
+		android:layout_width="fill_parent"
+		android:layout_height="40dp"
+		android:layout_centerHorizontal="true"
+		android:layout_marginTop="2dp"
+		android:background="@drawable/border"
+		android:hint="Barcode"
+		android:textStyle="bold|italic"
+		android:textColor="#000"
+		/>
+
+	<!-- Scan Button -->
+	<Button
+		android:id="@+id/scanBarcodeButton"
+		android:layout_width="1dp"
+		android:layout_height="1dp"
+		android:layout_gravity="center"
+		android:layout_marginTop="10dp"
+		android:visibility="invisible"
+		 />
+
+	<TextView
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:gravity="center"
+		android:padding="16dp"
+		android:text="Location Number"
+		android:textColor="#000"
+		android:textSize="18sp"
+		android:textStyle="bold" />
+
+	<!-- Display scanned location -->
+
+
+	<EditText
+		android:id="@+id/scannedLocationTextView"
+		android:layout_width="fill_parent"
+		android:layout_height="40dp"
+		android:layout_centerHorizontal="true"
+		android:layout_marginTop="30dp"
+		android:background="@drawable/border"
+		android:hint="Location"
+		android:textStyle="bold|italic" />
+
+	<!-- Scan Button -->
+	<Button
+		android:id="@+id/scanLocationButton"
+		android:layout_width="1dp"
+		android:layout_height="1dp"
+		android:layout_gravity="center"
+		android:layout_marginTop="1dp"
+		android:visibility="invisible"
+		 />
+
+	<TextView
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:gravity="center"
+		android:padding="16dp"
+		android:layout_marginTop=".5in"
+		android:text="RFID"
+		android:textColor="#000"
+		android:textSize="18sp"
+		android:textStyle="bold"
+		/>
+
+	<TextView
+		android:id="@+id/et_data"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:lines="3"
+		android:background="@drawable/border"
+		>
+	</TextView>
+
+	<EditText
+		android:id="@+id/vData"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="2dp"
+		android:visibility="invisible"
+
+		>
+	</EditText>
+
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="50dp"
+		android:orientation="horizontal">
+
+		<Button
+			android:id="@+id/bt_write"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:text="@string/write"
+			android:background="@color/blue"
+			android:textColor="@color/white"
+			android:layout_marginStart="8dp"
+			android:layout_marginEnd="8dp"
+			android:textStyle="bold"
+			/>
+
+		<Button
+			android:id="@+id/bt_read"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:text="Map Tag"
+			android:textStyle="bold"
+			android:background="@color/blue"
+			android:textColor="@color/white"
+			android:layout_marginStart="8dp"
+			android:layout_marginEnd="8dp" />
+
+		<Button
+			android:id="@+id/bt_clear"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:text="@string/clear"
+			android:textStyle="bold"
+			android:background="@color/blue"
+			android:textColor="@color/white"
+			android:layout_marginStart="8dp"
+			android:layout_marginEnd="8dp"
+			/>
+
+	</LinearLayout>
+
+
+</LinearLayout>
+
+
+
+
+
+     
